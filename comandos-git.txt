@@ -1,0 +1,37 @@
+** crear rama nueva 
+git branch experimental
+
+** detalles de las ramas que existen
+git show-branch
+
+** moverme a cada rama que existe
+git checkout experimental
+
+** crear nueva rama y situarse en la nueva rama
+git checkout -b otrarama
+
+** me muevo a la rama (si no existe la crea temporalmente)
+git switch -c develop
+
+** publicar los cambios en la rama, subirlos al remoto
+git push -u origin develop
+
+
+
+** descargar rama (rama creada por otro usuario)
+git fetch
+
+** acceder a la rama descargada
+git checkout mi_rama_remota_descargada
+
+** fusionar ramas
+git merge experimental
+
+** borrar rama
+git branch -d rama_a_borrar
+
+** forzar borrar rama
+git branch -D rama_a_borrar
+
+** eliminar rama que esta en remoto
+git push origin --delete rama_a_borrar
